@@ -9,6 +9,7 @@
             int myInt = 0;
             Boolean myBool = true;
             Decimal myDec = 0.1;
+            char myChar = '\a';
             if (myString == "World")
             {
                 Console.WriteLine("Hello, world!");
@@ -21,7 +22,7 @@
             {
                 Console.WriteLine("Hello, " + myString + "! Have a nice day!");
             }
-            Console.WriteLine(myInt + myDec + myBool);
+            Console.WriteLine(myInt + myDec + myBool + myChar);
         }
     }
 }
