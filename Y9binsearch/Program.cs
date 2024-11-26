@@ -6,6 +6,9 @@
         {
             Console.WriteLine("What's your name?");
             string myString = Console.ReadLine();
+            int myInt = 0;
+            Boolean myBool = true;
+            Decimal myDec = 0.1;
             if (myString == "World")
             {
                 Console.WriteLine("Hello, world!");
@@ -18,6 +21,7 @@
             {
                 Console.WriteLine("Hello, " + myString + "! Have a nice day!");
             }
+            Console.WriteLine(myInt + myDec + myBool);
         }
     }
 }
