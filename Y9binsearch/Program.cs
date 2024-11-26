@@ -11,6 +11,10 @@
             {
                 Console.WriteLine("Hello, world!");
             }
+            else if (myString == "Hello")
+            {
+                Console.WriteLine("Hey!");
+            }
         }
     }
 }
