@@ -6,9 +6,9 @@
         {
             int myInt = 0;
             Boolean myBool = true;
-            Decimal myDec = 0;
+            Decimal myDec = 0.1M;
             char myChar = '\a';
-            if (myDec == 0)
+            if (myDec == 0.1M)
             {
                 Console.WriteLine("true");
             }
