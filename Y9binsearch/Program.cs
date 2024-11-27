@@ -4,12 +4,24 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("What's your name?");
-            string myString = Console.ReadLine();
             int myInt = 0;
             Boolean myBool = true;
-            Decimal myDec = 0.1;
+            Decimal myDec = 0;
             char myChar = '\a';
+            if (myDec == 0)
+            {
+                Console.WriteLine("true");
+            }
+            if (myBool)
+            {
+                Console.WriteLine("true");
+            }
+            if(myInt == 0)
+            {
+                Console.WriteLine("true");
+            }
+            Console.WriteLine("What's your name?");
+            string myString = Console.ReadLine();
             if (myString == "World")
             {
                 Console.WriteLine("Hello, world!");
@@ -22,7 +34,7 @@
             {
                 Console.WriteLine("Hello, " + myString + "! Have a nice day!");
             }
-            Console.WriteLine(myInt + myDec + myBool + myChar);
+            Console.WriteLine(myChar);
         }
     }
 }
