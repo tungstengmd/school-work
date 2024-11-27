@@ -9,7 +9,7 @@
             var lpp = 0;
             var mp = (hpp + lpp) / 2;
             Console.Write("Enter search key: ");
-            int key = Int32.Parse(s: Console.ReadLine());
+            int key = Convert.ToInt32(value: Console.ReadLine());
             if (key > ints[mp])
             {
                 lpp = mp + 1;
