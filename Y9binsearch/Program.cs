@@ -4,44 +4,26 @@
     {
         static void Main(string[] args)
         {
-            int myInt = 0;
-            bool myBool = true;
-            decimal myDec = 0.1M;
-            char myChar = '\a';
-            double myDouble = 2;
-            string myStr = "hey cutie :3";
-            if (myDec == 0.1M)
+            int[] ints = { 1, 3, 6, 8, 9, 11, 12, 16 };
+            var hpp = ints.Length;
+            var lpp = 0;
+            var mp = (hpp + lpp) / 2;
+            Console.Write("Enter search key: ");
+            int key = Int32.Parse(s: Console.ReadLine());
+            if (key > ints[mp])
             {
-                Console.WriteLine("true");
+                lpp = mp + 1;
+                mp = (hpp + lpp) / 2;
             }
-            if (myBool)
+            else if (key < ints[mp]) 
             {
-                Console.WriteLine("true");
+                hpp = mp - 1;
+                mp = (hpp + lpp) / 2;
             }
-            if(myInt == 0)
+            else if (key == ints[mp])
             {
-                Console.WriteLine("true");
+                Console.WriteLine("Found!");
             }
-            Console.Write("What's your name? ");
-            var myString = Console.ReadLine();
-            if (myString == "World")
-            {
-                Console.WriteLine("Hello, world!");
-            }
-            else if (myString == "Hello")
-            {
-                Console.WriteLine("Hey!");
-            }
-            else
-            {
-                Console.WriteLine("Hello, " + myString + "! Have a nice day!");
-            }
-            Console.WriteLine(myChar);
-            Console.WriteLine(myBool);
-            Console.WriteLine(myDouble);
-            Console.WriteLine(myInt);
-            Console.WriteLine(myDec);
-            Console.Write(myStr);
         }
     }
 }
