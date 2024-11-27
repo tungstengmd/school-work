@@ -36,10 +36,10 @@
             {
                 Console.WriteLine("Hello, " + myString + "! Have a nice day!");
             }
-            Console.Write(myChar);
-            Console.Write(myBool);
-            Console.Write(myDouble);
-            Console.Write(myInt);
+            Console.WriteLine(myChar);
+            Console.WriteLine(myBool);
+            Console.WriteLine(myDouble);
+            Console.WriteLine(myInt);
             Console.WriteLine(myDec);
             Console.Write(myStr);
         }
