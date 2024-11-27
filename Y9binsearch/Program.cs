@@ -22,7 +22,7 @@
             {
                 Console.WriteLine("true");
             }
-            Console.Write("What's your name?");
+            Console.Write("What's your name? ");
             var myString = Console.ReadLine();
             if (myString == "World")
             {
