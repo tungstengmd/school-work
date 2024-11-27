@@ -5,9 +5,11 @@
         static void Main(string[] args)
         {
             int myInt = 0;
-            Boolean myBool = true;
-            Decimal myDec = 0.1M;
+            bool myBool = true;
+            decimal myDec = 0.1M;
             char myChar = '\a';
+            double myDouble = 2;
+            string myStr = "hey cutie :3";
             if (myDec == 0.1M)
             {
                 Console.WriteLine("true");
@@ -21,7 +23,7 @@
                 Console.WriteLine("true");
             }
             Console.WriteLine("What's your name?");
-            string myString = Console.ReadLine();
+            var myString = Console.ReadLine();
             if (myString == "World")
             {
                 Console.WriteLine("Hello, world!");
@@ -35,6 +37,11 @@
                 Console.WriteLine("Hello, " + myString + "! Have a nice day!");
             }
             Console.WriteLine(myChar);
+            Console.WriteLine(myStr);
+            Console.WriteLine(myBool);
+            Console.WriteLine(myDouble);
+            Console.WriteLine(myInt);
+            Console.WriteLine(myDec);
         }
     }
 }
