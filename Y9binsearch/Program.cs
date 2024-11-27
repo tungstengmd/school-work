@@ -22,7 +22,7 @@
             {
                 Console.WriteLine("true");
             }
-            Console.WriteLine("What's your name?");
+            Console.Write("What's your name?");
             var myString = Console.ReadLine();
             if (myString == "World")
             {
@@ -36,12 +36,12 @@
             {
                 Console.WriteLine("Hello, " + myString + "! Have a nice day!");
             }
-            Console.WriteLine(myChar);
-            Console.WriteLine(myStr);
-            Console.WriteLine(myBool);
-            Console.WriteLine(myDouble);
-            Console.WriteLine(myInt);
+            Console.Write(myChar);
+            Console.Write(myBool);
+            Console.Write(myDouble);
+            Console.Write(myInt);
             Console.WriteLine(myDec);
+            Console.Write(myStr);
         }
     }
 }
